@@ -71,12 +71,11 @@ const About = () => {
             fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
           }}
         >
-          Sinh viên FPT University (2022-2026), đam mê công nghệ, thích sáng tạo
-          và luôn chủ động học hỏi.
+          Sinh viên năm 3 ngành Kỹ thuật phần mềm tại FPT University (2022–2026). 
+          Yêu thích lập trình Back-End, đam mê công nghệ và luôn chủ động học hỏi để phát triển bản thân.
           <br />
           <span style={{ color: "#68a063", fontWeight: 600 }}>
-            Kỹ năng nổi bật: Web Development, Git, Node.js, SQL, Teamwork,
-            Problem Solving.
+            Kỹ năng: Node.js, Express.js, RESTful API, SQL, Git, Teamwork, Problem Solving.
           </span>
         </Typography>
         <Typography
@@ -85,10 +84,10 @@ const About = () => {
             color: "#888",
             mb: 3,
             fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
+            fontStyle: "italic",
           }}
         >
-          "Luôn hướng tới sự hoàn thiện bản thân và tạo ra giá trị thực cho cộng
-          đồng qua công nghệ."
+          "Tôi luôn hướng tới việc xây dựng các hệ thống hiệu quả và mang lại giá trị thực cho cộng đồng qua công nghệ."
         </Typography>
         <Button
           variant="contained"
@@ -107,59 +106,6 @@ const About = () => {
         >
           Xem Portfolio
         </Button>
-        <Box sx={{ mt: 4, display: "flex", justifyContent: "center", gap: 3 }}>
-          <Box
-            sx={{
-              px: 3,
-              py: 2,
-              bgcolor: "#f5f5f5",
-              borderRadius: 2,
-              boxShadow: 1,
-              fontWeight: 600,
-              color: "#a259ff",
-              fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
-              fontSize: 18,
-              transition: "transform 0.2s",
-              "&:hover": { transform: "scale(1.08)", boxShadow: 4 },
-            }}
-          >
-            Git
-          </Box>
-          <Box
-            sx={{
-              px: 3,
-              py: 2,
-              bgcolor: "#f5f5f5",
-              borderRadius: 2,
-              boxShadow: 1,
-              fontWeight: 600,
-              color: "#68a063",
-              fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
-              fontSize: 18,
-              transition: "transform 0.2s",
-              "&:hover": { transform: "scale(1.08)", boxShadow: 4 },
-            }}
-          >
-            Node.js
-          </Box>
-          <Box
-            sx={{
-              px: 3,
-              py: 2,
-              bgcolor: "#f5f5f5",
-              borderRadius: 2,
-              boxShadow: 1,
-              fontWeight: 600,
-              color: "#00758f",
-              fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
-              fontSize: 18,
-              transition: "transform 0.2s",
-              "&:hover": { transform: "scale(1.08)", boxShadow: 4 },
-            }}
-          >
-            SQL
-          </Box>
-        </Box>
       </Paper>
     </Box>
   );

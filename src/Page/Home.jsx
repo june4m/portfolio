@@ -14,14 +14,14 @@ const Home = () => {
             onClick={() => navigate("/")}
             sx={{ fontWeight: 600 }}
           >
-            Trang chủ
+            Home
           </Button>
           <Button
             color="inherit"
             onClick={() => navigate("/about")}
             sx={{ fontWeight: 600 }}
           >
-            Giới thiệu bản thân
+            About Me
           </Button>
         </Toolbar>
       </AppBar>
@@ -86,7 +86,7 @@ const Home = () => {
               >
                 {/* Thay src bằng đường dẫn ảnh của bạn */}
                 <img
-                  src="/public/vite.svg"
+                  src="/public/minh.jpg"
                   alt="avatar"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
@@ -131,54 +131,24 @@ const Home = () => {
               FPT University Student &amp; Web Developer
             </Typography>
             <Box sx={{ display: "flex", gap: 2, mb: 3 }}>
-              <Button
-                variant="contained"
-                sx={{
-                  bgcolor: "#a259ff",
-                  color: "#fff",
-                  fontWeight: 700,
-                  borderRadius: 3,
-                  px: 4,
-                  py: 1,
-                  fontSize: 18,
-                  boxShadow: 2,
-                  "&:hover": { bgcolor: "#7c3aed" },
-                }}
-              >
-                Xem dự án
-              </Button>
-            </Box>
-            <Box sx={{ display: "flex", gap: 3, mb: 2 }}>
-              <Typography
-                variant="body2"
-                sx={{
-                  color: "#a259ff",
-                  fontWeight: 700,
-                  fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
-                }}
-              >
-                Git
-              </Typography>
-              <Typography
-                variant="body2"
-                sx={{
-                  color: "#68a063",
-                  fontWeight: 700,
-                  fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
-                }}
-              >
-                Node.js
-              </Typography>
-              <Typography
-                variant="body2"
-                sx={{
-                  color: "#00758f",
-                  fontWeight: 700,
-                  fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
-                }}
-              >
-                SQL
-              </Typography>
+            <Button
+  variant="contained"
+  href="https://github.com/june4m/BloodDonationSupportSystemBE"
+  target="_blank"
+  sx={{
+    bgcolor: "#a259ff",
+    color: "#fff",
+    fontWeight: 700,
+    borderRadius: 3,
+    px: 4,
+    py: 1,
+    fontSize: 18,
+    boxShadow: 2,
+    "&:hover": { bgcolor: "#7c3aed" },
+  }}
+>
+  Xem dự án
+</Button>
             </Box>
             <Box
               sx={{
@@ -243,66 +213,92 @@ const Home = () => {
         </Grid>
 
         {/* MIDDLE SECTION */}
-        <Grid
-          item
-          xs={12}
-          md={3}
-          sx={{
-            p: 0,
-            bgcolor: "#f5f5f5",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Box
-            sx={{
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Typography
-              variant="h5"
-              sx={{
-                fontWeight: 700,
-                fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
-                color: "#222",
-                mt: 6,
-                letterSpacing: 2,
-              }}
-            >
-              BOOK
-            </Typography>
-            <Box
-              sx={{
-                mt: 4,
-                width: "80%",
-                height: 120,
-                bgcolor: "#ddd",
-                borderRadius: 2,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                p: 2,
-                textAlign: "center",
-              }}
-            >
-              <Typography
-                variant="body2"
-                sx={{
-                  color: "#888",
-                  fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
-                }}
-              >
-                Dự án nổi bật sẽ được cập nhật tại đây
-              </Typography>
-            </Box>
-          </Box>
-        </Grid>
+<Grid
+  item
+  xs={12}
+  md={3}
+  sx={{
+    p: 0,
+    bgcolor: "#f5f5f5",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  }}
+>
+  <Box
+    sx={{
+      width: "100%",
+      height: "100%",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      p: 3,
+    }}
+  >
+    <Box
+  sx={{
+    mt: 4,
+    p: 3,
+    borderRadius: 3,
+    bgcolor: "#f9f9f9",
+    boxShadow: 2,
+    maxWidth: 500,
+    mx: "auto",
+    textAlign: "center",
+  }}
+>
+  <Typography
+    variant="h6"
+    sx={{ fontWeight: 700, mb: 1, color: "#333" }}
+  >
+    Blood Donation Support System
+  </Typography>
+  
+  <Typography
+    variant="body2"
+    sx={{
+      color: "#555",
+      mb: 2,
+      textAlign: "justify",
+      fontFamily: "Montserrat, Arial",
+    }}
+  >
+    Hệ thống hỗ trợ đăng ký hiến máu, theo dõi đơn vị máu, phân loại nhóm máu, gửi cảnh báo và email. Hỗ trợ xác thực người dùng bằng JWT và phân quyền theo vai trò. 
+  </Typography>
+
+  <Typography
+    variant="caption"
+    sx={{ color: "#888", fontSize: 13 }}
+  >
+    Stack: Node.js, Express.js, TypeScript
+  </Typography>
+
+  <Box mt={2}>
+    <Button
+      variant="contained"
+      href="https://github.com/june4m/BloodDonationSupportSystemBE"
+      target="_blank"
+      sx={{
+        bgcolor: "#6a1b9a",
+        color: "#fff",
+        px: 3,
+        borderRadius: 2,
+        fontSize: 14,
+        fontWeight: 600,
+        "&:hover": {
+          bgcolor: "#4a148c",
+        },
+      }}
+    >
+      Xem trên GitHub
+    </Button>
+  </Box>
+</Box>
+
+  </Box>
+</Grid>
+
 
         {/* RIGHT SECTION */}
         <Grid
@@ -355,7 +351,7 @@ const Home = () => {
         </Grid>
       </Grid>
 
-      {/* SKILLS */}
+      {/* SKILLS / TECH STACK */}
       <Box sx={{ mt: 6, mb: 2 }}>
         <Typography
           variant="h6"
@@ -367,49 +363,93 @@ const Home = () => {
             color: "#222",
           }}
         >
-          Kỹ năng
+          Tech Stack
         </Typography>
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 4 }}>
-          {[
-            { name: "Git", color: "#f1502f", icon: "🐙" },
-            { name: "Node.js", color: "#68a063", icon: "🟢" },
-            { name: "SQL", color: "#00758f", icon: "🗄️" },
-          ].map((skill) => (
-            <Box
-              key={skill.name}
+
+        {/* GROUPS: Languages, Frameworks & Tools, Databases */}
+        {[
+          {
+            title: "Languages",
+            items: [
+              { name: "C", color: "#00599C", icon: "🌊" },
+              { name: "C#", color: "#178600", icon: "🧩" },
+              { name: "Java", color: "#f89820", icon: "☕" },
+              { name: "HTML5", color: "#e34c26", icon: "📄" },
+              { name: "JavaScript", color: "#f7df1e", icon: "✨", textColor: "#000" },
+              { name: "TypeScript", color: "#3178c6", icon: "🔷" },
+            ],
+          },
+          {
+            title: "Frameworks & Tools",
+            items: [
+              { name: ".NET", color: "#512bd4", icon: "🟣", textColor: "#fff" },
+              { name: "Node.js", color: "#68a063", icon: "🟢" },
+              { name: "Express.js", color: "#000000", icon: "🚂", textColor: "#fff" },
+              { name: "JWT", color: "#000000", icon: "🔐", textColor: "#fff" },
+              { name: "Postman", color: "#ef5b25", icon: "📬" },
+            ],
+          },
+          {
+            title: "Databases",
+            items: [
+              { name: "MongoDB", color: "#4db33d", icon: "🍃" },
+              { name: "Microsoft SQL Server", color: "#a80000", icon: "🗄️" },
+            ],
+          },
+        ].map((group) => (
+          <Box key={group.title} sx={{ mb: 3 }}>
+            <Typography
+              variant="subtitle1"
               sx={{
-                px: 4,
-                py: 2,
-                bgcolor: "#fff",
-                borderRadius: 2,
-                boxShadow: 2,
+                textAlign: "center",
                 fontWeight: 600,
+                color: "#555",
                 fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
-                color: skill.color,
-                fontSize: 22,
-                display: "flex",
-                alignItems: "center",
-                gap: 1.5,
-                transition: "transform 0.2s, box-shadow 0.2s",
-                cursor: "pointer",
-                "&:hover": {
-                  transform: "scale(1.08)",
-                  boxShadow: 5,
-                  bgcolor: "#f5f5f5",
-                },
+                mb: 1,
               }}
             >
-              <span style={{ fontSize: 28 }}>{skill.icon}</span>
-              {skill.name}
+              {group.title}
+            </Typography>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                flexWrap: "wrap",
+                gap: 2,
+              }}
+            >
+              {group.items.map((item) => (
+                <Box
+                  key={item.name}
+                  sx={{
+                    px: 3,
+                    py: 1,
+                    bgcolor: item.color,
+                    color: item.textColor || "#fff",
+                    borderRadius: 2,
+                    fontWeight: 600,
+                    fontFamily: "Montserrat, Arial, Helvetica, sans-serif",
+                    fontSize: 16,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 1,
+                    boxShadow: 2,
+                    transition: "transform 0.2s, box-shadow 0.2s",
+                    cursor: "default",
+                    "&:hover": {
+                      transform: "scale(1.05)",
+                      boxShadow: 4,
+                    },
+                  }}
+                >
+                  <span style={{ fontSize: 20 }}>{item.icon}</span>
+                  {item.name}
+                </Box>
+              ))}
             </Box>
-          ))}
-        </Box>
-      </Box>
-
-      {/* FOOTER */}
-      <Box sx={{ textAlign: "center", mt: 4, color: "#888", fontSize: 14 }}>
-        © 2025 Portfolio | FPT University
-      </Box>
+          </Box>
+        ))}
+      </Box>  
     </Box>
   );
 };
