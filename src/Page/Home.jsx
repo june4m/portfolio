@@ -86,7 +86,7 @@ const Home = () => {
               >
                 {/* Thay src bằng đường dẫn ảnh của bạn */}
                 <img
-                  src="/public/minh.jpg"
+                  src="/minh.jpg"
                   alt="avatar"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
